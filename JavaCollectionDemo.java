@@ -1,27 +1,24 @@
 package com.lpjavacollection;
 
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
+import java.util.Stack;
 
 public class JavaCollectionDemo {
     public static void main(String[] args) {
-        doListDemo();
+        doStackDemo();
     }
 
-    private static void doListDemo() {
-        System.out.println("Demo List Contains");
-        //Creating List
-        List<String> list = new ArrayList<>();
-
-        //Adding objects to the List
-        list.add("Nishu");
-        list.add("Kajal");
-        list.add("Shreya");
-        list.add("Priya");
-        list.add("Nishu");
-
-        Iterator itr = list.iterator();
+    private static void doStackDemo() {
+        System.out.println("Demo Stack Contains");
+        Stack<String> stack = new Stack<>();
+        stack.push("Nishu");
+        stack.push("Kajal");
+        stack.push("Shreya");
+        stack.push("Priya");
+        stack.push("Yukti");
+        stack.push("Neha");
+        String pop = stack.pop();
+        Iterator<String> itr = stack.iterator();
         while(itr.hasNext()) {
             System.out.println(itr.next());
         }
