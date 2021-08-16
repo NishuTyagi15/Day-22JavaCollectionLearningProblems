@@ -1,7 +1,7 @@
 package com.lpjavacollection;
 
+import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 
 public class JavaCollectionDemo {
@@ -12,14 +12,14 @@ public class JavaCollectionDemo {
     private static void doListDemo() {
         System.out.println("Demo List Contains");
         //Creating List
-        List<String> list = new LinkedList<>();
+        List<String> list = new ArrayList<>();
 
         //Adding objects to the List
         list.add("Nishu");
         list.add("Kajal");
         list.add("Shreya");
         list.add("Priya");
-        list.add("Yukti");
+        list.add("Nishu");
 
         Iterator itr = list.iterator();
         while(itr.hasNext()) {
