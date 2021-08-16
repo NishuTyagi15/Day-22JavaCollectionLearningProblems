@@ -11,8 +11,10 @@ public class JavaCollectionDemo {
 
     private static void doListDemo() {
         System.out.println("Demo List Contains");
+        //Creating List
         List<String> list = new LinkedList<>();
 
+        //Adding objects to the List
         list.add("Nishu");
         list.add("Kajal");
         list.add("Shreya");
