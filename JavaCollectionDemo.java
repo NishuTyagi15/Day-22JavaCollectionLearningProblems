@@ -9,7 +9,7 @@ public class JavaCollectionDemo {
     }
 
     private static void doSetDemo() {
-        System.out.println("\nIn doSetDemo");
+        System.out.println("Demo Set Contains");
         Set<String> set = new LinkedHashSet<>();
         set.add("Nishu");
         set.add("Shreya");
