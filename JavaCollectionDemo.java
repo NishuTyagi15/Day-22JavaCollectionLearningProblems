@@ -1,22 +1,23 @@
 package com.lpjavacollection;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
 public class JavaCollectionDemo {
     public static void main(String[] args) {
-        doSetDemo();
+        doMapDemo();
     }
 
-    private static void doSetDemo() {
-        System.out.println("Demo Set Contains");
-        Set<String> set = new LinkedHashSet<>();
-        set.add("Nishu");
-        set.add("Shreya");
-        set.add("Priya");
-        set.add("Neha");
-        for (String str :set) {
-            System.out.println(str);
+    private static void doMapDemo() {
+        System.out.println("Demo Map Contains");
+        Map<Integer,String> map = new HashMap<>();
+        map.put(100,"Nishu");
+        map.put(101,"Krati");
+        map.put(102,"Yukti");
+        map.put(102,"Yukti");
+
+        for(Map.Entry m:map.entrySet()) {
+            System.out.println(m.getKey() + " " + m.getValue());
         }
     }
 }
